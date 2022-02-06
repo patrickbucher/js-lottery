@@ -93,3 +93,7 @@ Beachten Sie dabei folgende Aspekte:
   aufgeführt.
 - Der Spieler sollte mehrere Runden nacheinander spielen können, auch mit den
   gleichen Zahlen.
+
+## Aufgabe `n`: _Weitere Aufgaben folgen…_
+
+TODO
