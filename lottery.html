@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lottery</title>
+        <link rel="stylesheet" type="text/css" href="lottery.css">
+        <script src="lottery.js"></script>
+    </head>
+    <body>
+        <h1>Lottery</h1>
+        <p>Pick 6 numbers out of 45 (1 to 45) and win:</p>
+        <ul>
+            <li><strong>2</strong> correct numbers: <span class="currency">3</span>.-</li>
+            <li><strong>3</strong> correct numbers: <span class="currency">5</span>.-</li>
+            <li><strong>4</strong> correct numbers: <span class="currency">500</span>.-</li>
+            <li><strong>5</strong> correct numbers: <span class="currency">50'000</span>.-</li>
+            <li><strong>6</strong> correct numbers: <span class="currency">1'000'000</span>.-</li>
+        </ul>
+        <p>Your current balance: <span id="balance" class="currency">100</span>.-</p>
+        <form>
+            <label for="guess">Guess (<span class="currency">2</span>.- per round)</label>
+            <input type="text" id="guess">
+            <input type="button" id="play" value="Play">
+            <input type="button" id="clear" value="Clear">
+        </form>
+        <p>Winning Numbers: <span id="winning-numbers"></span</p>
+        <p>You picked <strong id="correct">0</strong> correct numbers.</p>
+        <p>You win <strong id="win" class="currency">0</strong>.-</p>
+    </body>
+</html>
