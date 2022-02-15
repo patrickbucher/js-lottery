@@ -94,6 +94,80 @@ Beachten Sie dabei folgende Aspekte:
 - Der Spieler sollte mehrere Runden nacheinander spielen können, auch mit den
   gleichen Zahlen.
 
+## Aufgabe 6: Zahlen einlesen
+
+Der Benutzer soll genau sechs eindeutige, durch Kommas (und optional:
+Leerzeichen) voneinander getrennte Zahlen zwischen 1 und 45 (inklusive) in das
+Textfeld eingeben. Beim Klick auf die Schaltfläche _Play_ sollen die vom
+Benutzer eingegebenen Zahlen aus dem entsprechenden Textfeld in ein Array
+abgespeichert werden.
+
+Hierzu sind folgende Artikel hilfreich:
+
+- [Array (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Split (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+
+Falls der Benutzer eine Zeichenkette eingibt, die den Anforderungen nicht
+entsprechen, soll mittels `window.alert()` eine entsprechende Fehlermeldung
+angezeigt werden.
+
+## Aufgabe 7: Zufallszahlen generieren
+
+Beim Klick auf _Play_ sollen sechs eindeutige Zufallszahlen von 1 bis 45
+(inklusive) generiert und in einem Array abgespeichert werden. Verwenden Sie
+hierzu die Funktion
+[`Math.random()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random),
+welche eine Zufallszahl zwischen 0 und 1 generiert. Sie müssen die Zahl
+transformieren, damit Sie im Wertebereich von 1 bis 45 zu liegen kommt.
+
+## Aufgabe 8: Getippte mit gezogenen Zahlen vergleichen
+
+Schreiben Sie eine Funktion, welche als Parameter die beiden Arrays der
+vorherigen beiden Aufgaben akzeptiert und die Anzahl der übereinstimmenden
+Zahlen dieser beiden Arrays zurückgibt. (Die Funktion muss also eine Zahl
+zwischen 0 und 6 inklusiv zurückgeben.)
+
+## Aufgabe 9: Gewinn ermitteln
+
+Schreiben Sie eine Funktion, welche die Anzahl der korrekt getippten Zahlen
+entgegennimmt und einen Gewinnbetrag nach den folgenden Regeln zurückgibt:
+
+| Anzahl Korrekte Zahlen | Gewinn      |
+|-----------------------:|------------:|
+| 0                      | 0.-         |
+| 1                      | 0.-         |
+| 2                      | 5.-         |
+| 3                      | 10.-        |
+| 4                      | 500.-       |
+| 5                      | 50'000 .-   |
+| 6                      | 1'000'000.- |
+
+## Aufgabe 10: Anzeige aktualisieren
+
+Die gezogenen Lottozahlen sollen als _Winning Numbers_ dargestellt werden. Für
+die Darstellung einer Lottokugel wurde die CSS-Klasse `ball` erstellt, welche
+Sie verwenden können. Sie benötigen die Methode `document.createElement()` um
+ein neues Element zu erstellen. Die Methoden `setAttribute()` und
+`appendChild()` sowie die Eigenschaft `innerHTML` eines DOM-Nodes werden Ihnen
+ebenfalls behilflich sein.
+
+Sachdienliche Informationen finden Sie im Abschnitt [The HTML
+DOM](https://www.w3schools.com/js/js_htmldom.asp) des JavaScripts-Tutorials vom
+W3C.
+
+Ist der Gewinn ermittelt, sollen die beiden Zahlen in der Anzeige _You picked
+**0** correct numbers._ und _You win 0.-_ unten an der Seite mit den
+entsprechenden Werten aktualisiert werden.
+
+## Aufgabe 11: Guthaben aktualisieren
+
+Für jeden (erfolgreich) getätigten Tipp müssen dem Spieler 2.- von seinem
+Kontostand (_Your current balance: 100.-_) abgezogen werden. Hat der Spieler
+einen zu geringen Kontostand, soll die Ziehung nicht durchgeführt und
+stattdessen eine Fehlermeldung angezeigt werden. Gewinnt der Spieler einen
+Betrag aufgrund richtig geratener Zahlen, soll dieser gutgeschrieben werden. Die
+Anzeige des aktuellen Kontostands ist nach jedem Spiel zu aktualisieren.
+
 ## Aufgabe `n`: _Weitere Aufgaben folgen…_
 
 TODO
