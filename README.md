@@ -66,7 +66,7 @@ Ein Klick auf den Button `Clear` soll den Inhalt des Eingabefelds leeren.
 
 ## Aufgabe 5: Das Programm entwerfen
 
-Die eigentliche Spiellogik läuft am, wenn Schaltfläche `Play` betätigt wird.
+Die eigentliche Spiellogik läuft ab, wenn die Schaltfläche `Play` betätigt wird.
 **Beschreiben Sie den Ablauf der Logik als Liste.** Diese kann etwa
 folgendermassen aussehen:
 
@@ -108,7 +108,7 @@ Hierzu sind folgende Artikel hilfreich:
 - [Split (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 Falls der Benutzer eine Zeichenkette eingibt, die den Anforderungen nicht
-entsprechen, soll mittels `window.alert()` eine entsprechende Fehlermeldung
+entspricht, soll mittels `window.alert()` eine entsprechende Fehlermeldung
 angezeigt werden.
 
 ## Aufgabe 7: Zufallszahlen generieren
@@ -148,11 +148,11 @@ Die gezogenen Lottozahlen sollen als _Winning Numbers_ dargestellt werden. Für
 die Darstellung einer Lottokugel wurde die CSS-Klasse `ball` erstellt, welche
 Sie verwenden können. Sie benötigen die Methode `document.createElement()` um
 ein neues Element zu erstellen. Die Methoden `setAttribute()` und
-`appendChild()` sowie die Eigenschaft `innerHTML` eines DOM-Nodes werden Ihnen
+`appendChild()`, sowie die Eigenschaft `innerHTML` eines DOM-Nodes, werden Ihnen
 ebenfalls behilflich sein.
 
 Sachdienliche Informationen finden Sie im Abschnitt [The HTML
-DOM](https://www.w3schools.com/js/js_htmldom.asp) des JavaScripts-Tutorials vom
+DOM](https://www.w3schools.com/js/js_htmldom.asp) des JavaScript-Tutorials vom
 W3C.
 
 Ist der Gewinn ermittelt, sollen die beiden Zahlen in der Anzeige _You picked
